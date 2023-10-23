@@ -1,0 +1,11 @@
+### Footprint positions - created on Mon Oct 23 11:10:20 2023 ###
+### Printed by KiCad version 7.0.6
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                   Package                               PosX       PosY       Rot  Side
+J1        Conn_01x12            PinSocket_1x12_P2.54mm_Vertical   106.6800   -71.1200    0.0000  top
+J2        Conn_01x16            PinSocket_1x16_P2.54mm_Vertical    86.3600   -60.9600    0.0000  top
+J4        Conn_ARM_JTAG_SWD_10  SAMTEC_FTSH-105-01-F-DV-K-TR       83.8200   -45.7200    0.0000  top
+J5        SWDIO                 CONN_PROBE_SPRING_01X01_C150H75    90.4240   -72.5170    0.0000  top
+J6        SWCLK                 CONN_PROBE_SPRING_01X01_C150H75    90.4240   -69.9770    0.0000  top
+## End
