@@ -1,5 +1,5 @@
-Drill report for CFL_FeatherDebugShield.kicad_pcb
-Created on 10/23/2023 11:11:04 AM
+Drill report for CFL_EE_FeatherDebugShield.kicad_pcb
+Created on 11/11/2023 12:06:41 AM
 
 Copper Layer Stackup:
     =============================================================
@@ -7,7 +7,7 @@ Copper Layer Stackup:
     L2 :  B.Cu                      back
 
 
-Drill file 'CFL_FeatherDebugShield.drl' contains
+Drill file 'CFL_EE_FeatherDebugShield.drl' contains
     plated through holes:
     =============================================================
     T1  0.381mm  0.0150"  (79 holes)
