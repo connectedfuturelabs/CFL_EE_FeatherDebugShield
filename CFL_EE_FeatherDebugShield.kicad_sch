@@ -6,8 +6,8 @@
 
   (title_block
     (title "FeatherDebugShield")
-    (date "2023-10-23")
-    (rev "v01a")
+    (date "2023-11-10")
+    (rev "v01b")
     (company "Connected Future Labs")
     (comment 1 "Designed by NN")
   )
@@ -712,10 +712,6 @@
     (stroke (width 0) (type default))
     (uuid 17cddf87-740c-4865-8c51-e2752fa52cb2)
   )
-  (polyline (pts (xy 95.631 66.929) (xy 95.885 66.675))
-    (stroke (width 0) (type default))
-    (uuid 18fcfe36-9fcf-49bc-82f0-b0cf71be94d4)
-  )
 
   (wire (pts (xy 91.44 130.81) (xy 107.95 130.81))
     (stroke (width 0) (type default))
@@ -734,11 +730,6 @@
     (stroke (width 0) (type default))
     (uuid 25ed3e10-1c25-4148-b9da-adafebcd482e)
   )
-  (polyline (pts (xy 99.06 67.31) (xy 100.33 66.04))
-    (stroke (width 0) (type default))
-    (uuid 30c584d1-4172-4529-b711-e2537e13f3af)
-  )
-
   (wire (pts (xy 53.34 96.52) (xy 53.34 100.33))
     (stroke (width 0) (type default))
     (uuid 32e2fc3e-7cca-4956-8fdb-62f1a0cbdfc2)
@@ -768,22 +759,10 @@
     (stroke (width 0) (type default))
     (uuid 538240a1-662c-4936-a47a-6099c57ae3fe)
   )
-  (polyline (pts (xy 95.885 66.675) (xy 96.139 66.929))
-    (stroke (width 0) (type default))
-    (uuid 5a7577e0-95c7-4fec-8bcb-8339b04bddf2)
-  )
-  (polyline (pts (xy 95.885 67.818) (xy 96.139 67.564))
-    (stroke (width 0) (type default))
-    (uuid 6c4dcfc4-b7a4-4db1-8d92-7c6e805da4b8)
-  )
 
   (wire (pts (xy 91.44 125.73) (xy 104.14 125.73))
     (stroke (width 0) (type default))
     (uuid 6da85f6c-4305-4185-b92f-98016816ab3b)
-  )
-  (polyline (pts (xy 95.885 66.675) (xy 95.885 67.945))
-    (stroke (width 0) (type dot))
-    (uuid 75c28865-db61-4c63-8bb8-02c10592e3bb)
   )
   (polyline (pts (xy 74.295 62.865) (xy 74.93 63.5))
     (stroke (width 0) (type default))
@@ -814,11 +793,6 @@
     (stroke (width 0) (type default))
     (uuid 8d6c4dc4-61e1-48bf-b384-5d12df456d38)
   )
-  (polyline (pts (xy 95.631 67.564) (xy 95.885 67.818))
-    (stroke (width 0) (type default))
-    (uuid 8e7aa4b3-fae7-4a5f-ba28-c789737eacc1)
-  )
-
   (wire (pts (xy 120.65 114.3) (xy 124.46 114.3))
     (stroke (width 0) (type default))
     (uuid 94830c50-70b4-4205-bbe2-b6c692fe6cd0)
@@ -860,10 +834,6 @@
   (wire (pts (xy 60.96 100.33) (xy 68.58 100.33))
     (stroke (width 0) (type default))
     (uuid b74252eb-7b25-4bd6-ad1c-3c047aaa897d)
-  )
-  (polyline (pts (xy 96.52 67.31) (xy 99.06 67.31))
-    (stroke (width 0) (type default))
-    (uuid b8af206f-cab2-4983-ae99-14e53e1a7a4f)
   )
   (polyline (pts (xy 119.38 110.49) (xy 119.38 135.89))
     (stroke (width 0) (type default))
@@ -1092,12 +1062,12 @@
     (effects (font (size 1.27 1.27)) (justify left bottom) (href "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/configure-other-jtag.html"))
     (uuid 4cfc42c5-d878-48ad-a018-7423300f9fc0)
   )
-  (text "Pogo connectors to contact the SWD points\nlocated on the Feather M0 bottom layer."
+  (text "Pogo connectors to contact the SWD pads\nlocated on the Feather M0 bottom layer."
     (at 66.04 36.83 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5b6448d8-42d2-4847-be3d-2db53b791634)
   )
-  (text "We cannot use the debugger on ESP32 as\nESP32 pins cannot be simultaneously used for debugging\nand as IOs by the program.\n1. GPIO13 : I2C clock\n2. GPIO12 : EmotiBit button\n3. GPIO15 : NC\n4. GPIO14 : BMI_INT1"
+  (text "We cannot use the debugger on ESP32 (for emotibit) as\nESP32 pins cannot be simultaneously used for debugging\nand as IOs by the program.\n1. GPIO13 : I2C clock\n2. GPIO12 : EmotiBit button\n3. GPIO15 : NC\n4. GPIO14 : BMI_INT1"
     (at 134.62 128.27 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a1744e41-d6d2-4041-9554-141dc96adcc5)
@@ -1110,7 +1080,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ba43a87f-efec-4546-97da-22431497fb20)
   )
-  (text "This height was emperically calculated to be ~11.5mm.\n(the theoretical calculation is not completely accurate\nsince the pin's travel inside the female side is not specified)\n\nThe pogo's height can lie between \n10.795mm(0.425mils) and 12.192mm(0.48mils)\n(calculated using datasheet)\nSince the height of the connector lies between the pogo's\nactuation span, a good contact should be made"
+  (text "Calculation for connector height and pogo height:\n\nThis height was emperically calculated to be ~11.5mm.\n(the theoretical calculation is not completely accurate\nsince the pin's travel inside the female side is not specified)\n\nThe pogo's height can lie between \n10.795mm(0.425mils) and 12.192mm(0.48mils)\n(calculated using datasheet)\nSince the height of the connector lies between the pogo's\nactuation span, a good contact should be made"
     (at 25.4 72.39 0)
     (effects (font (size 1 1)) (justify left bottom))
     (uuid bb2addfd-6ac9-41e6-a7c3-e7070260422e)
@@ -1119,10 +1089,6 @@
     (at 111.76 143.51 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid bb3b9a2a-acfc-41d8-a0b4-24a9639cd1fa)
-  )
-  (text "depth unknown" (at 100.33 66.04 0)
-    (effects (font (size 0.5 0.5)) (justify left bottom))
-    (uuid e32eab7d-446d-4d81-b7c3-e31b0e448800)
   )
 
   (label "GPIO14" (at 93.98 130.81 0) (fields_autoplaced)
@@ -1199,7 +1165,7 @@
     )
     (pin "1" (uuid 3f6fcd36-242e-4bbd-87f7-d454f6d959df))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "#FLG02") (unit 1)
         )
@@ -1228,7 +1194,7 @@
     (pin "1" (uuid 54de5425-f832-48ba-83b6-ef30a059ab7e))
     (pin "2" (uuid 1a607d38-f719-4ad4-9db9-76d3f759ef80))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J7") (unit 1)
         )
@@ -1292,7 +1258,7 @@
     (pin "8" (uuid 867a9ee6-6003-4d3f-a0dc-0c78f50aade4))
     (pin "9" (uuid ca2da38b-3d0f-4d6b-a141-4301e30c57ff))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J2") (unit 1)
         )
@@ -1321,7 +1287,7 @@
     (pin "1" (uuid 8ba6e44d-b7a3-44a0-9810-6286a1d11895))
     (pin "2" (uuid caae2d2e-1fb9-48ed-88cf-5d28b7c61940))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J3") (unit 1)
         )
@@ -1370,7 +1336,7 @@
     )
     (pin "1" (uuid ab295362-c696-41e3-b1b7-42b9de13119c))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J5") (unit 1)
         )
@@ -1399,7 +1365,7 @@
     (pin "1" (uuid c62de6d1-fe28-493a-95c2-9eb634f09b07))
     (pin "2" (uuid 8bb5638e-eea8-49d2-9014-b01cae108aeb))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J8") (unit 1)
         )
@@ -1428,7 +1394,7 @@
     (pin "1" (uuid 2fbae4d5-e397-4099-bbc9-6f918a505cea))
     (pin "2" (uuid c9101831-0233-4c46-8c35-13422fa348c1))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J9") (unit 1)
         )
@@ -1453,7 +1419,7 @@
     )
     (pin "1" (uuid 2c33dbb9-cae9-42d5-ad09-4e251ae64ca6))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "#PWR05") (unit 1)
         )
@@ -1511,7 +1477,7 @@
     (pin "8" (uuid 3fdc4027-57ee-4eb2-9e9f-714a1326a631))
     (pin "9" (uuid fddb4b7b-5c1e-4760-83d1-ce624c6b447a))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J4") (unit 1)
         )
@@ -1536,7 +1502,7 @@
     )
     (pin "1" (uuid b48325b9-e826-4560-9b85-0cee9256f271))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "#FLG01") (unit 1)
         )
@@ -1561,7 +1527,7 @@
     )
     (pin "1" (uuid e9945f30-bbe8-4873-abfa-3f5eb8c4ba73))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "#PWR02") (unit 1)
         )
@@ -1586,7 +1552,7 @@
     )
     (pin "1" (uuid 8a794a85-ba5b-4f42-aea1-0ac1d576728f))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "#PWR01") (unit 1)
         )
@@ -1646,7 +1612,7 @@
     (pin "8" (uuid cd6b5cbe-219c-4e8e-9ea6-6cc496ed43de))
     (pin "9" (uuid fa407a60-b691-4719-a879-72ed48b91c76))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J1") (unit 1)
         )
@@ -1695,7 +1661,7 @@
     )
     (pin "1" (uuid 95f8895d-60d3-431d-a751-92a43fa09365))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "J6") (unit 1)
         )
@@ -1720,7 +1686,7 @@
     )
     (pin "1" (uuid e5d593be-5843-4472-b1f3-64fbc50b51d2))
     (instances
-      (project "CFL_EmotiBit_DebugShield"
+      (project "CFL_EE_FeatherDebugShield"
         (path "/0051c2d3-6afe-4dfe-a36e-434dbeeb15f1"
           (reference "#PWR03") (unit 1)
         )

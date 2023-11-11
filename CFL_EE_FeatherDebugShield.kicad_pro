@@ -55,10 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "lib_footprint_mismatch|95076131|69850000|9283bc3e-f058-46cf-88dd-9cfa433d3821|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|95076131|73009492|4a2244bc-b15d-483a-a06c-07f49ccd2c59|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -413,7 +410,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "CFL_FeatherDebugShield.kicad_pro",
+    "filename": "CFL_EE_FeatherDebugShield.kicad_pro",
     "version": 1
   },
   "net_settings": {
