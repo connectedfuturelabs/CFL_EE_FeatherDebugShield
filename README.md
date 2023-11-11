@@ -4,6 +4,8 @@
 - The Feather ESP32 can be debugged using the JTAG interface. This shield has a provision for debugging with ESP32 using solder bridges to create the necessary connections. **This configuration has not been tested.**
 
 ## Debug shield
+**Note that this is a bare bones board (which is why the SM and silk screen are missing)**
+
 | stage | how it looks |
 |-------|----------|
 | After fabrication | <img src="./assets/shield_fab.jpg" width="300"> |
