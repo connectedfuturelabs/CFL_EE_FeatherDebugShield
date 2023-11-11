@@ -1,0 +1,22 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Config,Land Pattern,MPN,Manufacturer,Max height,Mounting Type,Supplier 1,Supplier 1 Link,Supplier 1 Part Number
+1,"Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x12,J1,Conn_01x12,PinSocket_1x12_P2.54mm_Vertical,1,https://suddendocs.samtec.com/catalog_english/ssq_th.pdf,,https://suddendocs.samtec.com/prints/ssq-1xx-xx-xx-x-xx-xxx-xx-xx.pdf,SSQ-112-03-G-S,Samtec Inc.,8.61mm,Through hole,Digikey,https://www.digikey.com/en/products/detail/samtec-inc/SSQ-112-03-G-S/1111549,SAM1198-12-ND
+2,"Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x16,J2,Conn_01x16,PinSocket_1x16_P2.54mm_Vertical,1,https://suddendocs.samtec.com/catalog_english/ssq_th.pdf,,https://suddendocs.samtec.com/prints/ssq-1xx-xx-xx-x-xx-xxx-xx-xx.pdf,SSQ-116-03-G-S,Samtec Inc.,8.61mm,Through Hole,Digikey,https://www.digikey.com/en/products/detail/samtec-inc/SSQ-116-03-G-S/1111545,SAM1198-16-ND
+3,"Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface",Conn_ARM_JTAG_SWD_10,J4,Conn_ARM_JTAG_SWD_10,SAMTEC_FTSH-105-01-F-DV-K-TR,1,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,,https://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-footprint.pdf,FTSH-105-01-F-DV-K-P,Samtec Inc.,,SMD,Digikey,https://www.digikey.com/en/products/detail/samtec-inc./FTSH-105-01-F-DV-K-P/2649976?utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Zombie%20SKUs&utm_term=&utm_content=General&utm_id=go_cmp-17815035045_adg-_ad-__dev-c_ext-_prd-2649976_sig-CjwKCAjwysipBhBXEiwApJOcu8G7L4Z2kFjMVSmNg2eI4Cvpua6el2yGVRjqd9xdNTzJekbJ-fXYuxoCbyEQAvD_BwE&gclid=CjwKCAjwysipBhBXEiwApJOcu8G7L4Z2kFjMVSmNg2eI4Cvpua6el2yGVRjqd9xdNTzJekbJ-fXYuxoCbyEQAvD_BwE,SAM8797-ND
+4,CONTACT SPRING LOADED T/H GOLD,CONN_PROBE_SPRING_01X01_TH,J6,SWCLK,CONN_PROBE_SPRING_01X01_C150H75,1,https://www.mill-max.com/catalog/download/2020-03%3A025M.pdf,,DNF,0929-7-15-20-75-14-11-0,Mill-Max Manufacturing Corp.,12.2mm,Sureface Mount,DigiKey,https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0929-7-15-20-75-14-11-0/5722643?s=N4IgjCBcoEwMwE4DsVQGMoDMCGAbAzgKYA0IA9lANojwBsSADCALqkAOALlCAMocBOASwB2AcxABfCaRhUQbMqLIACNGWHDCaDmX4sJQA,ED1420-ND
+5,CONTACT SPRING LOADED T/H GOLD,CONN_PROBE_SPRING_01X01_TH,J5,SWDIO,CONN_PROBE_SPRING_01X01_C150H75,1,https://www.mill-max.com/catalog/download/2020-03%3A025M.pdf,,DNF,0929-7-15-20-75-14-11-0,Mill-Max Manufacturing Corp.,12.2mm,Sureface Mount,DigiKey,https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0929-7-15-20-75-14-11-0/5722643?s=N4IgjCBcoEwMwE4DsVQGMoDMCGAbAzgKYA0IA9lANojwBsSADCALqkAOALlCAMocBOASwB2AcxABfCaRhUQbMqLIACNGWHDCaDmX4sJQA,ED1420-ND
+
+
+
+
+
+Component Groups:,6
+Component Count:,9
+Fitted Components:,5
+Number of PCBs:,1
+Total components:,5
+Schematic Version:,v01a
+Schematic Date:,2023-10-23
+PCB Variant:,default
+BoM Date:,10/23/2023 11:08:31 AM
+Schematic Source:,CFL_FeatherDebugShield.kicad_sch
+KiCad Version:,Eeschema 7.0.6
