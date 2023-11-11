@@ -32,3 +32,8 @@
   - then align the pogo pins with a pair of tweezers to ensure contact.
   - solder the pins in place
 - We used stacking headers because we intend to use this as a triple stack with EmotiBit, but if you are only interested in debugging the Feather, then you can use normal female socket for the connector. 
+
+
+# Additional Notes
+- The design was created in Kicad 7.
+- If you want to build on top of this design, please feel free to fork the repository and make the rewuired changes! you will need to download Kicad v7+ to work with the design files.
