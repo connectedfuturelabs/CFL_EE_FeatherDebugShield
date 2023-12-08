@@ -2,7 +2,7 @@
 - This is a SWD breakout shield for the Feather M0 and a JTAG breakout shield for Feather ESP32.
 - The Feather M0 has a provision for SWD debugging which requires soldering leads to the SWD pads on the bottom on the Feather M0. We made this shield so that we can debug a Feather M0 without having to solder leads. Instead, we use pogo pins to create the contact when the feather M0 is stacked on this shield.
 - The Feather ESP32 can be debugged using the JTAG interface. This shield has a provision for debugging with ESP32 using solder bridges to create the necessary connections. **This configuration has not been tested.**
-
+![](./assets/EmotiBit_Feather_debugShield.png)
 ## Debug shield
 **Note that this is a bare bones board (which is why the SM and silk screen are missing)**
 
