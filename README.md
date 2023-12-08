@@ -22,7 +22,7 @@
   - Just upload the gerber design files on a manufacturer's website and choose other board specifications.
   - We used [`4PCB`](https://www.4pcb.com/pcb-prototype-2-4-layer-boards-specials.html) as our manufacturer.
   - The `_bom.csv` file contains the parts needed for assembly. You can directly upload the bom file into the digikey portal to get the required parts for assembly.
-- Once the shield is fabbed and stacked, you can use the 10 pin JTAG conector to connecto to a [J-Link debugger](https://www.segger.com/products/debug-probes/j-link/).
+- Once the shield is fabbed and stacked, you can use the [10 pin JTAG conector cable](https://www.digikey.com/en/products/detail/olimex-ltd/ARM-JTAG-20-10/3471401?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Low%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20243063506_adg-_ad-__dev-c_ext-_prd-3471401_sig-CjwKCAiAmsurBhBvEiwA6e-WPNh5BHwkzxviOyLhfwEuieJADaysFQ4kxIkHNQBExya359XoMJ5D-hoCkgkQAvD_BwE&gad_source=1&gclid=CjwKCAiAmsurBhBvEiwA6e-WPNh5BHwkzxviOyLhfwEuieJADaysFQ4kxIkHNQBExya359XoMJ5D-hoCkgkQAvD_BwE) to connecto to a [J-Link debugger](https://www.segger.com/products/debug-probes/j-link/).
 
 ## Assembly notes
 - It is important to line up the pogo pins vertically to ensure there is a contact with the pads on the Feather. The following sequence helps with the allignment:
